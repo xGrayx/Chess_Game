@@ -1,0 +1,311 @@
+html {
+    background: url("space.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    font-size: 180%;
+    font-family: serif;
+    color: white;
+    background-color:transparent;
+}
+
+img {
+    width: 200%;
+}
+
+body {
+    color: white;
+    background-color:transparent;
+}
+
+div{
+    text-align: center;
+    background-color: black;
+    color:red;
+}
+
+.play_button{
+    color: goldenrod;
+    font-family: serif;
+    font-size: 70%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: darkred;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+    z-index: 2;
+}
+
+.play_button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.99);
+    background-color: purple;
+}
+
+#board{
+    background-color:white !important;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid gold;
+    border-collapse: collapse;
+}
+
+.wSquare{
+    text-align: center;
+    border-color: gold;
+    background-color: rgb(200,0,0) !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 1px;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    table-layout: fixed;
+    font-size: 450%;
+
+}
+
+.bSquare{
+    text-align: center !important;
+    border-color: gold;
+    background-color:black !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 1px;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    table-layout: fixed;
+    font-size: 450%;
+}
+
+.highlighted{
+    text-align: center;
+    border: 2px solid purple;
+    background-color: rgba(200,200,200,0.7) !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 1px;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    table-layout: fixed;
+    font-size: 450%;
+}
+
+
+#capturesLeft{
+    font-size: 200%;
+    background-color: transparent;
+    color: gold;
+    text-align: left !important;
+    float: left;
+    position: absolute;
+}
+
+
+#capturesRight{
+    font-size: 200%;
+    background-color: transparent;
+    color: fuchsia;
+    text-align: right !important;
+    float: right;
+    position: absolute;
+}
+
+.tracker{
+    background-color: transparent;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    height: 100px;
+    font-size: 150%;
+    width: 20%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    top: 400px;
+
+}
+
+.animationPiece1{
+    position: absolute;
+    color: red;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    font-size: 500%;
+    left: 1px;
+    top: 75px;
+}
+
+.animationPiece2{
+    position: absolute;
+    color: white;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    font-size: 500%;
+    right: 40px;
+    top: 75px;
+}
+
+.animationPiece3{
+    position: absolute;
+    color: white;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    font-size: 500%;
+    left: 750px;
+    top: 100px;
+}
+
+.animationPiece4{
+    position: absolute;
+    color: red;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    font-size: 500%;
+    right: 795px;
+    top: 100px;
+}
+
+.name_entry_L{
+    position: absolute;
+    top: 250px;
+    left:50px;
+    background: transparent;
+    font-size: 150%;
+}
+
+.name_entry_R{
+    position: absolute;
+    top: 250px;
+    right:50px;
+    background: transparent;
+    font-size: 150%;
+    color: white;
+}
+
+.submit_name_1{
+    top: 400px;
+    left:50px;
+    background: red;
+    color: white;
+}
+
+.submit_name_2{
+    top: 400px;
+    right:50px;
+    background: white;
+    color: red;
+}
+.selectDark{
+    background-color: black;
+    font-size: 125%;
+    color: white;
+    position: absolute;
+    top: 290px;
+    left:325px;
+}
+
+.selectLight{
+    background-color: black;
+    font-size: 125%;
+    color: white;
+    position: absolute;
+    top: 290px;
+    right:50px;
+}
+
+#user_storage{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    color: white;
+    font-size: 75%;
+}
+
+#clear_button{
+    position: absolute;
+    top: 175px;
+    left: 200px;
+}
+
+.game_save{
+    position: absolute;
+    top: 140px;
+    right: 200px;
+    background-color: transparent;
+}
+
+#save_button{
+    background-color: darkgray;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+}
+
+#load_button{
+    font-size: 60%;
+    background-color: darkred;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#load_button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.99);
+    background-color: yellowgreen;
+}
+
+.potential {
+    text-align: center;
+    border: 2px solid yellow;
+    background-color: rgba(200,200,0,0.7) !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 1px;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    table-layout: fixed;
+    font-size: 450%;
+}
+
+.kill{
+    text-align: center;
+    border: 5px solid purple;
+    background-color: rgba(255,0,255,0.7) !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 1px;
+    border-collapse: collapse;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    table-layout: fixed;
+    font-size: 450%;
+}
+

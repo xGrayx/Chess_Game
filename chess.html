@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="chess.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss Army Grid</title>
+</head>
+
+<header>
+    <h1 id="gameTitle">Welcome to Grayson's Chess Game</h1>
+    <p1>
+        <button class="play_button" onclick="fillBoard()" id="play_button">Play!</button><br><br>
+    </p1>
+    <!-- Login Info-->
+    <div id="user_storage"></div>
+    <button id="clear_button" onclick="clear_storage()">Clear Local Storage</button>
+
+
+    <!-- Game Save-->
+    <div class= "game_save" id="game_save">
+        <button id="save_button" onclick="">Save Game:Disabled</button>
+        <br><button id="load_button" onclick="get_data()">Load Last Save</button><div id="last_load"></div>
+    </div>
+
+</header>
+
+<body>
+<div id="gameStateDiv"></div>
+<div id="board"></div>
+<div class="tracker"><br></div>
+
+<!-- Graveyard Areas-->
+<div id="capturesLeft" style="position: fixed; top: 550px; left:100px;"></div>
+<div id="capturesRight" style="position: fixed; top: 550px; right: 100px;"></div>
+
+<!-- Intro Animation-->
+<div class="animationPiece1">&#x265B</div>
+<div class="animationPiece2">&#x2655</div>
+<div class="animationPiece3">&#x2654</div>
+<div class="animationPiece4">&#x265A</div>
+
+<!-- Name Entry for player 1-->
+<div class="name_entry_L">
+    <label for="p1_name">Name of Player 1: </label>
+    <input type="text" id="p1_name" name="p1_name">
+    <br><br><br><button class="submit_name_1" onclick="get_P1_info()" id="submit_name_1">submit</button>
+</div>
+
+<!-- Name Entry for player 2-->
+<div class="name_entry_R">
+    <label for="p2_name">Name of Player 2: </label>
+    <input type="text" id="p2_name" name="p2_name">
+    <br><br><br><button class="submit_name_2" onclick="get_P2_info()" id="submit_name_2">submit</button>
+</div>
+
+<!-- Color Entry for player 1-->
+<div style="background-color: transparent">
+    <label for="p1_color" style="font-size: 125%; position:absolute; top: 290px; left:180px;">Choose a color:</label>
+
+    <select name="p1_color" id="p1_color" class="selectDark">
+        <option style= "color: #660066" value="purple">Purple</option>
+        <option style= "color: #003300" value="green">Green</option>
+        <option style= "color: #0000cc" value="blue">Blue</option>
+        <option style= "color: gray" value="gray">Gray</option>
+    </select>
+</div>
+
+<!-- Color Entry for player 2-->
+<div style="background-color: transparent">
+    <label for="p2_color" style="font-size: 125%; position:absolute; top: 290px; right:175px; color: white;">Choose a color:</label>
+
+    <select name="p2_color" id="p2_color" class="selectLight">
+        <option style= "color: #ffcc00" value="yellow">Yellow</option>
+        <option style= "color: white" value="white">White</option>
+        <option style= "color: #ffffcc" value="beige">Beige</option>
+        <option style= "color: #66ffff" value="aqua">Aqua</option>
+    </select>
+</div>
+
+
+<script src= "chess.js" ></script>
+
+</body>
+
+
+</html>

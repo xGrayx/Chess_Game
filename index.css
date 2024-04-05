@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+header {
+    border: 10px solid teal;
+    border-radius: 50px;
+    background-image: url('https://ak.picdn.net/shutterstock/videos/13417325/thumb/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    text-align: center;
+    padding: 10px;
+    font-family: serif;
+    color: white;
+}
+
+body {
+    background-color: white;
+}
+
+div {
+    color:teal;
+}
+
+footer{
+    background-color: gray
+}
+
+a {
+    border:none;
+}
+
+.play_redirect{
+    padding: 0;
+    background: black url("https://www.freeiconspng.com/uploads/chess-icon-28.png") no-repeat;
+    border-radius: 350px;
+    width: 410px;
+    height: 400px;
+    border:none;
+}
+
+.play_redirect img {
+    padding: 0;
+    vertical-align: middle;
+    background-size: contain;
+    border:none;
+}
+
+.play_redirect:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.99);
+    background-color: gold;
+    border-radius: 400px;
+    border:none;
+}
+
+.disabled_redirect{
+    font-size: 150%;
+    color: red;
+    background-color: gray;
+    padding: 0;
+    border-radius: 350px;
+    width: 410px;
+    height: 400px;
+    border:none;
+}
+
+.login_area{
+    text-align: right;
+    padding: 10px 7px 7px 7px;
+    background-color: #ffcc00;
+    font-size: 200%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    float: right;
+    color: black;
+    border-radius: 10px;
+
+}
+
+.login_button{
+    font-size: 50%;
+}
+
+#message_box{
+    text-align: center;
+    font-size: 60%;
+    color: red;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grayson's Chess Instructions</title>
+</head>
+
+
+<body>
+	<header>
+		<h1 style="font-size:600%;">Chess</h1>
+	</header>
+<!--Login sticky box-->
+	<div class="login_area"><span style="display: block; text-align: center">Login</span><hr>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" size="25">
+		<br><label for="password">Password:</label>
+		<input type="password" id="password" name="password" size="25"><br>
+		<span style="display: block; text-align: center"><button class= 'login_button' id= 'login_button' onclick="validate_user()">submit</button></span>
+		<div id="message_box"></div>
+	</div>
+
+	<div style="font-size:150%;">
+		<h1>Overview:</h1>
+			<p>
+			Chess is a two player strategy game. The game is compromised of 16 pieces per player differentiated by their color (white and black). Players take turns moving their pieces around the board as they attempt to capture
+			the other player's king. To do this, they generally must first capture a number of their opponent's pieces to remove them from the board.
+			</p>
+		<h3>Goal:</h3>
+			<p>
+			The goal of the game is to place the opponent's king piece into "check mate". This occurs by first putting creating a 'check' or putting one of your pieces into a position where their next move would capture the king.
+			If there is nowhere for the opponent's king to escape check, it becomes checkmate.Each piece has unique movements. If any piece lands on another piece's square, the piece initially there is captured and taken out of
+			the game.
+			</p>
+		<h3>Movements: <br><sub>to read more about each piece, click their image</sub></h3>
+			<p>
+			Pawn:   Moves forward one square. To capture another piece, it may move diagonally one square. On its first move, it is allowed to go forward either one or two squares. <a href="https://en.wikipedia.org/wiki/Pawn_(chess)" target="_blank" ><img src="https://dictionary.cambridge.org/us/images/thumb/pawn_noun_002_26818.jpg?version=5.0.102" alt="A Pawn" style="float:left;width:50px;height:50px;"></a>
+			<br><br>Rook:   Moves as many squares as desired in a vertical or horizontal direction.<a href="https://en.wikipedia.org/wiki/Rook_(chess)" target="_blank" ><img src="https://atlas-content-cdn.pixelsquid.com/stock-images/rook-chess-piece-lOoR7oE-600.jpg" alt="A Rook" style="float:left;width:50px;height:50px;"></a>
+			<br><br>Knight: Moves vertically or horizontally 3 spaces and then either right or left one square creating an "L" shape. This is the only piece that can jump over other pieces to get to its destination. <a href="https://en.wikipedia.org/wiki/Knight_(chess)" target="_blank" ><img src="https://www.nicepng.com/png/detail/219-2191734_knight-chess-piece-png-vector-transparent-black-knight.png" alt="A Knight" style="float:left;width:50px;height:50px;"></a>
+			<br><br>Bishop: Moves as many squares as desired in a diagonal direction.<a href="https://en.wikipedia.org/wiki/Bishop_(chess)" target="_blank" ><img src="https://cdn.shopify.com/s/files/1/2209/1363/products/2017_Mega_Chess_Need_to_Clip-42_8ea2395c-b6e3-44af-8883-d0d8518c6f23.png?v=1535647235g" alt="A Bishop" style="float:left;width:50px;height:50px;"></a>
+			<br><br>Queen:  Moves as many squares as desired in either a horizontal, vertical, or diagonal direction. The most powerful piece in the game.<a href="https://en.wikipedia.org/wiki/Queen_(chess)" target="_blank" ><img src="https://cdn.shopify.com/s/files/1/2209/1363/products/2017_Mega_Chess_Need_to_Clip-37_3f51096a-44bb-429e-b9d8-17f8f45f6005.png?v=1535648764" style="float:left;width:50px;height:50px;"></a>
+			<br><br>King:   Moves one square in any direction desired.<a href="https://en.wikipedia.org/wiki/King_(chess)" target="_blank" ><img src="https://f1.pngfuel.com/png/775/514/325/knight-chess-king-chess-piece-white-and-black-in-chess-queen-rook-fourplayer-chess-png-clip-art.png" alt="A King" style="float:left;width:50px;height:50px;"></a>
+			</p>
+		<br>
+		<h5>Additional Rules:</h5>
+			<p>
+			- Traditionally, whoever is the white team begins the game.
+			<br>- If the pawn reaches the other side of the board, it can be promoted to any of the other pieces.
+			<br>- A king is not allowed to move into a check. If a player's last remaining piece is their king and they are in a position where any move they make will result in a check, the game becomes a "stale mate" and the game ends in a tie.
+			<br>- If neither the rook or the king have moved from their original positions, they may perform a move called a 'castle' where:
+				<br><span style= padding-left:4em> (if moving to the right) the king moves two squares to the right and the rook jumps over him to end up two squares to the left.
+				<br><span style= padding-left:4em> (if moving to the left) the king moves 2 squares to the left and the rook jumps him to go 3 squares to the right. This move may not be performed under check.
+
+			</p>
+
+		<br><h1 style= "text-align: center;">Ready to play? Login to be redirected to the game!</h1>
+	</div>
+
+
+	<br>
+	<footer><h3>references</h3>
+		<p1><b>chess board image retrieved from </b><a href="https://www.shutterstock.com/">https://www.shutterstock.com/</a>
+		<br><b>pawn image retrieved from </b><a href="https://dictionary.cambridge.org">https://dictionary.cambridge.org</a>
+		<br><b>rook image retrieved from </b><a href="https://www.pixelsquid.com/">https://www.pixelsquid.com/</a>
+		<br><b>knight image retrieved from </b><a href="https://www.nicepng.com/">https://www.nicepng.com/</a>
+		<br><b>bishop and queen images retrieved from </b><a href="https://www.megachess.com/">https://www.megachess.com/</a>
+		<br><b>king image retrieved from </b><a href="https://www.pngfuel.com/">https://www.pngfuel.com/</a>
+		</p1>
+
+	<script src="index.js"></script>
+</body>
+</html>
